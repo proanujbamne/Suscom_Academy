@@ -1,0 +1,88 @@
+*{
+
+
+    body {
+        background-color:rgb(0, 224, 224);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+      }
+      
+    }
+    .heading{
+        display:flex;
+        justify-content:center;
+        color:blue;
+        text-decoration:dashed
+
+        
+    }
+    .footer{
+        
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:black;
+            color: white;
+            text-align: center;
+            padding:3px;
+            
+          }
+    
+
+
+
+    .image{
+        align-items:center;
+        justify-content:center;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    .logo-ani{
+        
+        width: 100px; /* adjust to your logo size */
+        height: 100px;
+        position:relative;
+        animation: circularMove s linear infinite;
+        
+    }
+      
+      @keyframes spinAndMove {
+        from { transform: rotate(0deg) translateX(px) rotate(0deg); }
+        to   { transform: rotate(360deg) translateX(0px) rotate(360deg); }
+      }
+      
+      .logo {
+        animation: spinAndMove 6s linear infinite;
+      }
+    .sub-heading {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc);
+        background-size: 300%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: gradientMove 4s ease infinite;
+      }
+      
+      /* Keyframes for animation */
+      @keyframes gradientMove {
+        0%   { background-position: 0% 50%; }
+        50%  { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      
+      
+
+

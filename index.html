@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Suscom Academy</title>
-    <script scr="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Suscom Academy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <header>
-    <div class="logo"></div>
-    <img src="/SuscomAcademy/logos/logo.png" class="logo logo-ani" alt=" Suscom logo">
-    </div>
-    
-    <h1 class="heading">Suscom Academy</h1>
-    <h3 class="sub-heading">Wellcome to the Sucsom Academy</h3>
-    <div class="image">
-        <!-- <div class="Logo"></div> -->
-    </div>
-</header>
 
-<footer>
-    <div class="footer"> this is contain footer</div>
-</footer>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="template/logos/logo.png" alt="Suscom Logo">
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Welcome to Suscom Academy</h1>
+      <p>Your journey to learning and innovation starts here.</p>
+      <button class="enroll-btn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p style="text-align:center; max-width:800px; margin:0 auto;">
+        At Suscom Academy, we believe in empowering learners through practical skills and real-world experience.
+        Our programs are designed to help you grow, innovate, and succeed in your chosen field.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES SECTION ===================== -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="program-grid">
+        <div class="program-card">
+          <h3>Training Programs</h3>
+          <p>Hands-on learning with real-world projects and expert mentorship.</p>
+        </div>
+        <div class="program-card">
+          <h3>Internship Opportunities</h3>
+          <p>Gain industry exposure and work on live projects with professionals.</p>
+        </div>
+        <div class="program-card">
+          <h3>Certifications</h3>
+          <p>Earn recognized certifications that boost your career opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p style="text-align:center;">Have questions or want to join? Reach out to us today!</p>
+      <button class="enroll-btn">Contact Now</button>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer">
+      <p>&copy; 2025 Suscom Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
